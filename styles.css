@@ -766,7 +766,7 @@ overflow-y: scroll;
 
 .company-type-div:hover{
  
-    color: rgb(78, 14, 142);
+    color: rgb(30, 126, 215);
     font-weight: 500;
     transition: color 0.5s ease;
  
@@ -908,7 +908,7 @@ img {
   color: var(--second-color);
 }
 .nav__toggle {
-  color: #600dff;
+  color: rgb(30, 126, 215);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -1366,7 +1366,7 @@ th {
 
 /* Style for table rows (tr) */
 .company-table td {
-  transition: blue 0.3s; /* Smooth transition for background color change */
+  transition: rgb(30, 126, 215) 0.3s; /* Smooth transition for background color change */
 }
 
 
@@ -2053,7 +2053,7 @@ th {
 }
 
 .ccpa-icon-div{
-    color: #392148;
+    color: rgb(30, 126, 215);
 }
 
 
@@ -2774,8 +2774,8 @@ th {
 
 .settings-info-btn-up:hover{
   background-color: rgb(247, 248, 250);
-    border-color:#392148;
-    color:#392148;
+    border-color:rgb(30, 126, 215);
+    color:rgb(30, 126, 215);
 }
 
 
@@ -2829,7 +2829,7 @@ th {
 }
 
 .settings-info-input:focus .settings-info-input:hover{
-  border-color:#392148;
+  border-color:rgb(30, 126, 215);
     border-right-width: 1px !important;
 }
 

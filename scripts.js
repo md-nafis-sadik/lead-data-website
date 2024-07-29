@@ -1,23 +1,344 @@
 document.addEventListener("DOMContentLoaded", () => 
   {
 
-    // Initial Data Fetching
-        const url = "http://localhost:5500/data.json"; // Change this to your actual JSON URL
-        let data = [];
+
+        let data = [
+          {
+            "first_name": "Nafis",
+            "last_name":"Sadik",
+            "job_title":"Web Developer",        
+            "email":"nafis@gmail.com",
+            "phone_number":"01781009235",
+            "company":"TIC Limited",
+            "industry":"Information Technology",
+            "country":"United States",        
+            "linkedin":"Md Nafis Sadik",
+            "employees":100,
+            "founded_year":1999,
+            "revenue":1000000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {
+            "first_name": "Rakin",
+            "last_name":"Abrar",
+            "job_title":"Marketing Manager",
+            "email":"rakin@gmail.com",
+            "phone_number":"01723123320",
+            "company":"TIC Limited",
+            "industry":"Information Technology",
+            "country":"United States",
+            "linkedin":"Rakin Abrar",
+            "employees":150,
+            "founded_year":1995,
+            "revenue":1500000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Farhan",
+            "last_name":"Sadiq",
+            "job_title":"Financial Analyst",
+            "email":"farhan@gmail.com",
+            "phone_number":"01521300208",
+            "company":"Brac Limited",
+            "industry":"Finance",
+            "country":"Canada",
+            "linkedin":"Farhan Sadiq",
+            "employees":110,
+            "founded_year":2001,
+            "revenue":900000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Sojib",
+            "last_name":"Ahmed",
+            "job_title":"Graphisc Designer",
+            "email":"sojib@gmail.com",
+            "phone_number":"01623993320",
+            "company":"Graphin Limited",
+            "industry":"Design",
+            "country":"United States",
+            "linkedin":"Rakin Abrar",
+            "employees":101,
+            "founded_year":2002,                                                                                                                                                                                                     
+            "revenue":1500000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Avery",
+            "last_name":"Johnson",
+            "job_title":"Software Engineer",
+            "email":"avery.johnson@gmail.com",
+            "phone_number":"01234567890",
+            "company":"Tech Solutions",
+            "industry":"Information Technology",
+            "country":"United States",
+            "linkedin":"Avery Johnson",
+            "employees":200,
+            "founded_year":2010,
+            "revenue":2500000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Liam",
+            "last_name":"Smith",
+            "job_title":"Product Manager",
+            "email":"liam.smith@gmail.com",
+            "phone_number":"09876543210",
+            "company":"InnoTech",
+            "industry":"Healthcare",
+            "country":"Canada",
+            "linkedin":"Liam Smith",
+            "employees":350,
+            "founded_year":2005,
+            "revenue":3200000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+         {                       
+            "first_name": "Olivia",
+            "last_name":"Brown",
+            "job_title":"Data Scientist",
+            "email":"olivia.brown@gmail.com",
+            "phone_number":"01112223344",
+            "company":"Data Analytics Inc.",
+            "industry":"Finance",
+            "country":"United Kingdom",
+            "linkedin":"Olivia Brown",
+            "employees":120,
+            "founded_year":2018,
+            "revenue":900000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Noah",
+            "last_name":"Davis",
+            "job_title":"Marketing Manager",
+            "email":"noah.davis@gmail.com",
+            "phone_number":"02233445566",
+            "company":"MarketPro",
+            "industry":"Marketing",
+            "country":"Australia",
+            "linkedin":"Noah Davis",
+            "employees":80,
+            "founded_year":2012,
+            "revenue":1200000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Emma",
+            "last_name":"Wilson",
+            "job_title":"UX Designer",
+            "email":"emma.wilson@gmail.com",
+            "phone_number":"03344556677",
+            "company":"Design Studio",
+            "industry":"Design",
+            "country":"Germany",
+            "linkedin":"Emma Wilson",
+            "employees":50,
+            "founded_year":2000,
+            "revenue":450000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "James",
+            "last_name":"Martinez",
+            "job_title":"Operations Manager",
+            "email":"james.martinez@gmail.com",
+            "phone_number":"04455667788",
+            "company":"Logistics Ltd.",
+            "industry":"Logistics",
+            "country":"Mexico",
+            "linkedin":"James Martinez",
+            "employees":300,
+            "founded_year":1999,
+            "revenue":5000000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Sophia",
+            "last_name":"Lee",
+            "job_title":"HR Specialist",
+            "email":"sophia.lee@gmail.com",
+            "phone_number":"05566778899",
+            "company":"PeopleFirst",
+            "industry":"Human Resources",
+            "country":"Singapore",
+            "linkedin":"Sophia Lee",
+            "employees":150,
+            "founded_year":2015,
+            "revenue":750000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Ethan",
+            "last_name":"Kim",
+            "job_title":"Network Engineer",
+            "email":"ethan.kim@gmail.com",
+            "phone_number":"06677889900",
+            "company":"NetSecure",
+            "industry":"Information Technology",
+            "country":"South Korea",
+            "linkedin":"Ethan Kim",
+            "employees":220,
+            "founded_year":2008,
+            "revenue":1800000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                        
+            "first_name": "Mia",
+            "last_name":"Garcia",
+            "job_title":"Financial Analyst",
+            "email":"mia.garcia@gmail.com",
+            "phone_number":"07788990011",
+            "company":"Finance Experts",
+            "industry":"Finance",
+            "country":"Spain",
+            "linkedin":"Mia Garcia",
+            "employees":130,
+            "founded_year":2011,
+            "revenue":1100000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        },
+        {                       
+            "first_name": "Charlotte",
+            "last_name":"Clark",
+            "job_title":"Sales Director",
+            "email":"charlotte.clark@gmail.com",
+            "phone_number":"08899001122",
+            "company":"Sales Solutions",
+            "industry":"Sales",
+            "country":"France",
+            "linkedin":"Charlotte Clark",
+            "employees":170,
+            "founded_year":2003,
+            "revenue":1100000,
+            "seniority": "Owner",
+            "domain":"www.ticltd.com",
+            "company_type": "private",
+            "company_service": "Web Development",
+            "technologies": "Ecommerce",
+            "last_updated":3
+        }
+        ];
         const rowsPerPage = 9;
         let currentPage = 1;
         let filterData = [];
+
+            // Function to display page data on given page number and data to input
+            const displayPage = (page, givendata) => {
+              // Select the table body where data will be displayed
+              const tableBody = document.querySelector(".company-table tbody");
+              tableBody.innerHTML = ""; // Clear existing table rows
+            
+              // Calculate start and end indices for the current page
+              const start = (page - 1) * rowsPerPage;
+              const end = start + rowsPerPage;
+              
+              // Slice data to get current page's data
+              const pageData = givendata.slice(start, end);
+            
+              // Loop through the data and create rows for each item
+              pageData.forEach((item) => {
+                const row = document.createElement("tr");
+                row.className = "data-row"; // Add class to row
+            
+                // Populate row with data from each item
+                row.innerHTML = `
+                  <td class="select"><input type="checkbox"></td>
+                  <td class="first_name">${item.first_name}</td>
+                  <td class="last_name">${item.last_name}</td>
+                  <td class="job_title">${item.job_title}</td>
+                  <td class="seniority">${item.seniority}</td>
+                  <td class="email">${item.email}</td>
+                  <td class="phone_number">${item.phone_number}</td>
+                  <td class="company">${item.company}</td>
+                  <td class="company_type">${item.company_type}</td>
+                  <td class="company_service">${item.company_service}</td>
+                  <td class="technologies">${item.technologies}</td>
+                  <td class="domain">${item.domain}</td>
+                  <td class="industry">${item.industry}</td>
+                  <td class="country">${item.country}</td>
+                  <td class="linkedin">${item.linkedin}</td>
+                  <td class="employees">${item.employees}</td>
+                  <td class="founded_year">${item.founded_year}</td>
+                  <td class="revenue">${item.revenue}</td>
+                  <td class="last_updated">${item.last_updated}</td>
+                  <td class="action"><button class="action-button">Save</button></td>
+                `;
+                tableBody.appendChild(row); // Append row to table body
+              });
+            
+              // Update pagination indicator to highlight current page
+              document.querySelectorAll(".page-span").forEach((span) => {
+                span.classList.remove("active"); // Remove 'active' class from all spans
+              });
+              document.querySelector(`.page-span[data-page="${page}"]`).classList.add("active"); // Add 'active' class to current page span
+            };
         
-        const fetchData = async () => {
-          try {
-            // Fetch data from the JSON URL
-            const response = await fetch(url);
-            if (!response.ok) {
-              throw new Error("Network response was not ok " + response.statusText);
-            }
-        
-            // Parse JSON response
-            data = await response.json();
         
             // Display the initial page of data
             displayPage(currentPage, data);
@@ -46,13 +367,6 @@ document.addEventListener("DOMContentLoaded", () =>
                 cells.forEach(td => td.style.backgroundColor = ''); // Reset background color on mouseout
               });
             });
-        
-          } catch (error) {
-            console.error("There has been a problem with your fetch operation:", error);
-          }
-        };
-        
-        fetchData();
 
     
 
@@ -62,56 +376,7 @@ document.addEventListener("DOMContentLoaded", () =>
         };
 
 
-    // Function to display page data on given page number and data to input
-        const displayPage = (page, givendata) => {
-          // Select the table body where data will be displayed
-          const tableBody = document.querySelector(".company-table tbody");
-          tableBody.innerHTML = ""; // Clear existing table rows
-        
-          // Calculate start and end indices for the current page
-          const start = (page - 1) * rowsPerPage;
-          const end = start + rowsPerPage;
-          
-          // Slice data to get current page's data
-          const pageData = givendata.slice(start, end);
-        
-          // Loop through the data and create rows for each item
-          pageData.forEach((item) => {
-            const row = document.createElement("tr");
-            row.className = "data-row"; // Add class to row
-        
-            // Populate row with data from each item
-            row.innerHTML = `
-              <td class="select"><input type="checkbox"></td>
-              <td class="first_name">${item.first_name}</td>
-              <td class="last_name">${item.last_name}</td>
-              <td class="job_title">${item.job_title}</td>
-              <td class="seniority">${item.seniority}</td>
-              <td class="email">${item.email}</td>
-              <td class="phone_number">${item.phone_number}</td>
-              <td class="company">${item.company}</td>
-              <td class="company_type">${item.company_type}</td>
-              <td class="company_service">${item.company_service}</td>
-              <td class="technologies">${item.technologies}</td>
-              <td class="domain">${item.domain}</td>
-              <td class="industry">${item.industry}</td>
-              <td class="country">${item.country}</td>
-              <td class="linkedin">${item.linkedin}</td>
-              <td class="employees">${item.employees}</td>
-              <td class="founded_year">${item.founded_year}</td>
-              <td class="revenue">${item.revenue}</td>
-              <td class="last_updated">${item.last_updated}</td>
-              <td class="action"><button class="action-button">Save</button></td>
-            `;
-            tableBody.appendChild(row); // Append row to table body
-          });
-        
-          // Update pagination indicator to highlight current page
-          document.querySelectorAll(".page-span").forEach((span) => {
-            span.classList.remove("active"); // Remove 'active' class from all spans
-          });
-          document.querySelector(`.page-span[data-page="${page}"]`).classList.add("active"); // Add 'active' class to current page span
-        };
+
         
         
   // Function to update paginaton span
